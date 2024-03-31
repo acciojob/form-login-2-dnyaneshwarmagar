@@ -2,7 +2,7 @@
 
 
 let submitBtn = document.getElementById("submit");
-function submitFormAndAlert(e){
+function submit(e){
 	e.preventDefault;
 	let firstName = document.getElementById("first_name").value;
 let lastName = document.getElementById("last_name").value;
@@ -12,4 +12,4 @@ let emailId = document.getElementById("email_id").value;
 	alert(message)
 }
 
-submitBtn.addEventListener("click",submitFormAndAlert)
+submitBtn.addEventListener("click",submit)
