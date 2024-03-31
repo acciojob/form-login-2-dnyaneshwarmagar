@@ -1,7 +1,8 @@
 //your JS code here. If required.
 
-function displayFormData() {
+function displayFormData(e) {
     // Get form data
+	e.preventDefault()
     const firstName = document.getElementById('firstName').value;
     const lastName = document.getElementById('lastName').value;
     const phoneNumber = document.getElementById('phoneNumber').value;
@@ -14,5 +15,5 @@ function displayFormData() {
     alert(alertMessage);
 
     // Prevent form submission
-    return false;
+    // return false;
 }
