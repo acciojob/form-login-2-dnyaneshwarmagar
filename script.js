@@ -1,15 +1,18 @@
 //your JS code here. If required.
 
+function displayFormData() {
+    // Get form data
+    const firstName = document.getElementById('firstName').value;
+    const lastName = document.getElementById('lastName').value;
+    const phoneNumber = document.getElementById('phoneNumber').value;
+    const email = document.getElementById('email').value;
 
-let submitBtn = document.getElementById("submit");
-function submit(e){
-	e.preventDefault;
-	let firstName = document.getElementById("first_name").value;
-let lastName = document.getElementById("last_name").value;
-let phneNumber = document.getElementById("phone_number").value;
-let emailId = document.getElementById("email_id").value;
-	let message = `First Name: ${firstName} Last Name: ${lastName} Phone Number: ${phneNumber} Email ID: ${emailId}`
-	alert(message)
+    // Construct alert message
+    const alertMessage = `First Name: ${firstName} Last Name: ${lastName} Phone Number: ${phoneNumber} Email ID: ${email}`;
+
+    // Display alert message
+    alert(alertMessage);
+
+    // Prevent form submission
+    return false;
 }
-
-submitBtn.addEventListener("click",submit)
